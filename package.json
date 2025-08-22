@@ -1,0 +1,14 @@
+{
+  "name": "ai-app-builder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "node backend/index.js",
+    "start-frontend": "cd frontend && npm start",
+    "setup": "node setup.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
